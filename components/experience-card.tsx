@@ -33,7 +33,7 @@ export default function ExperienceCard({title, subtitle, year, ...props} : Exper
                     }
                 }
                 
-            }, 1000)
+            }, 500)
         
         return () => {
             if (!isHovered) {
@@ -53,7 +53,7 @@ export default function ExperienceCard({title, subtitle, year, ...props} : Exper
                 }
                 <p className="text-sm opacity-50 tracking-tight">{subtitle}</p>
             </div>
-            <div className={`text-sm font-semibold ${year === 'loading' && 'group-hover:animate-spin'}`}>
+            <div className={`text-sm font-semibold ${year === 'loading' && 'animate-spin'}`}>
                 { year === 'loading' ? <Icon icon="loading" /> : year && <div>{year}</div> }
             </div>
         </div>
