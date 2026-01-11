@@ -15,8 +15,8 @@ type ProjectCardButtonProps = {
 
 export default function ProjectCard({title, subtitle, image, website, github} : ProjectCardProps) {
     return (
-        <div className="w-full sm:flex-1 sm:min-w-[49%] min-h-70 h-90 border border-portgray rounded-md flex flex-col items-center justify-end overflow-hidden relative">
-            { image && <div className='bg-cover bg-center absolute w-full h-full' style={{backgroundImage: `url(/${image})`}} />}
+        <div className="w-full sm:flex-1 sm:min-w-[49%] min-h-70 h-90 border border-portgray  flex flex-col overflow-hidden items-center justify-end relative transition-all hover:border-[#4d4d4d] group">
+            { image && <div className={`bg-cover bg-center absolute w-full h-full group-hover:h-[110%] transition-all`} style={{backgroundImage: `url(/${image})`}} />}
             <div className="bg-linear-to-b from-portblack/20 to-portblack w-full h-full absolute"></div>
             <div className="w-9/10 z-10 mb-2 md:mb-3">
                 <h3 className="w-full font-semibold text-sm/tight">{title}</h3>
@@ -33,7 +33,7 @@ export default function ProjectCard({title, subtitle, image, website, github} : 
 
 function ProjectButton({icon, link, ...props} : ProjectCardButtonProps) {
     return (
-        <button className="flex items-center opacity-50 gap-1 border rounded-full p-0.5 px-2" {...props}>
+        <button className="flex items-center opacity-50 gap-1 border rounded-full p-0.5 px-2 transition-all hover:opacity-100 cursor-pointer" {...props}>
             <Icon icon={icon} className="w-5"/>
             { icon == 'github' && <p className="text-xs">GitHub</p> }
             { icon == 'website' && <p className="text-xs">Website</p> }

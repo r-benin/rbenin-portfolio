@@ -26,16 +26,16 @@ export default function Home() {
                 <p className="text-xs lg:text-sm tracking-tight w-full sm:text-center text-center">I’m a graduating BSIT student who loves to implement <span className="font-bold">business solutions</span> with modern web and mobile technologies.</p>
                 <p className="text-xs lg:text-sm tracking-tight w-full sm:text-center text-center">Currently, I’m looking for a <span className="font-bold">developer internship</span> to kickstart my career in the tech industry.</p>
               </div>
-              <div className="flex gap-3 mt-5">
-                <Button className="bg-white sm:bg-transparent rounded-full sm:rounded-none gap-1 px-3 sm:px-0 flex items-center">
+              <div className="flex h-8 gap-3 mt-5">
+                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
                     <Icon icon='mail' className="text-portblack sm:text-white"/>
                     <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Email</p>
                 </Button>
-                <Button className="bg-white sm:bg-transparent rounded-full sm:rounded-none gap-1 px-3 sm:px-0 flex items-center">
+                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
                     <Icon icon='linkedin' className="text-portblack sm:text-white"/>
                     <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Linkedin</p>
                 </Button>
-                <Button className="bg-white sm:bg-transparent rounded-full sm:rounded-none gap-1 px-3 sm:px-0 flex items-center">
+                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
                     <Icon icon='github' className="text-portblack sm:text-white"/>
                     <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Github</p>
                 </Button>
