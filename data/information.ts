@@ -33,14 +33,14 @@ export const projects = [
         title: 'RBenin Portfolio',
         subtitle: 'Personal Project',
         image: 'preview-portfolio.jpg',
-        website: 'wew',
-        github: 'wew'
+        website: 'https://rbenin.vercel.app/',
+        github: 'https://github.com/r-benin/rbenin-portfolio'
     },
     {
         title: 'Ecollector: Household Used Cooking Oil Collection System',
         subtitle: 'Capstone Project',
         image: 'preview-ecollector.jpg',
-        github: 'wew'
+        github: 'https://github.com/r-benin/ecollector'
     },
     
 ]
