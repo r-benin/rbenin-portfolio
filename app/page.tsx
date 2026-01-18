@@ -1,6 +1,5 @@
 import { Playfair_Display } from "next/font/google";
 import Icon from "@/components/icon";
-import Button from "@/components/button";
 
 import { experience, projects, skills } from "@/data/information";
 import Badge from "@/components/badge";
@@ -27,18 +26,21 @@ export default function Home() {
                 <p className="text-xs lg:text-sm tracking-tight w-full sm:text-center text-center">Currently, I’m looking for a <span className="font-bold">developer internship</span> to kickstart my career in the tech industry.</p>
               </div>
               <div className="flex h-8 gap-3 mt-5">
-                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
+                <a className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1"
+                  href='mailto:rdbenin@gmail.com' target="_blank">
                     <Icon icon='mail' className="text-portblack sm:text-white"/>
                     <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Email</p>
-                </Button>
-                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
+                </a>
+                <a className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1"
+                  href='https://www.linkedin.com/in/rbenin/' target="_blank">
                     <Icon icon='linkedin' className="text-portblack sm:text-white"/>
-                    <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Linkedin</p>
-                </Button>
-                <Button className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1">
+                    <p className="block sm:hidden text-portblack text-[10px] tracking-tight">LinkedIn</p>
+                </a>
+                <a className="bg-white sm:bg-transparent rounded-lg sm:rounded-none gap-1 px-3 sm:px-0 flex items-center cursor-pointer transition-transform sm:hover:pb-1"
+                  href='https://github.com/r-benin' target="_blank">
                     <Icon icon='github' className="text-portblack sm:text-white"/>
-                    <p className="block sm:hidden text-portblack text-[10px] tracking-tight">Github</p>
-                </Button>
+                    <p className="block sm:hidden text-portblack text-[10px] tracking-tight">GitHub</p>
+                </a>
               </div>
           </div>
         </div>
@@ -108,61 +110,6 @@ export default function Home() {
         <div className="w-full h-5 md:h-20 bg-linear-to-b from-portgray to-portgray/0 px-px mb-5">
           <div className="w-full h-full bg-portblack"></div>
         </div>
-        {/* <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div> */}
       </main>
     </div>
   );
